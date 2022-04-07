@@ -32,3 +32,8 @@ export default function validateInfo(values){
       return errors;
     
 }
+
+
+
+
+//Almost all done- few inputs error handlings remaining will do it later :]
