@@ -1,0 +1,16 @@
+.divv p {
+    color: red;
+}
+.faaraam{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
