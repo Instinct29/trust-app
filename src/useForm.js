@@ -29,7 +29,7 @@ const useForm = (validate)=>{
         e.preventDefault();
 
         setErrors(validate(values));
-        console.log(values);
+        
     }
 
     return {handleChange , values, handleSubmit, errors}

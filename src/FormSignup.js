@@ -1,6 +1,7 @@
 import React from 'react'
 import useForm from './useForm';
 import validate from './ValidateInfo';
+import DataTable from './DataTable';
 import './Form.css'
 
 
@@ -42,7 +43,7 @@ const FormSignup = () => {
              {errors.email && <p>{errors.email}</p>}
              </div>
 
-             <div>
+             <div className='divv'>
                <label >Date Of Birth</label>
                <input type="date" name="dob" value={values.dob} onChange={handleChange}/>
                {errors.dob && <p>{errors.dob}</p>}
@@ -108,9 +109,9 @@ const FormSignup = () => {
              </form>
              </div>
 
-             {
-               console.log(values)
-             }
+            {console.log(values)}
+
+            <DataTable maal={values} />
 
 
     </>
