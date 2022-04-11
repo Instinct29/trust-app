@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useForm from './useForm';
+import "./table.css"
 
-const DataTable = ({maal}) => {
+const DataTable = () => {
 
-    const {values} = useForm();
-    console.log(values);
+
+     const {contacts} = useForm();
+    //  console.log(contacts)
+    
+
+   
 
   return (
     
-    <div>
+    <div className='tableData'>
 
           <table>
               <thead>
                   <tr>
                       <th>Name</th>
                       <th>Email</th>
+                      <th>DOB</th>
                       <th>Gender</th>
                       <th>Profile Pic</th>
                       <th>Education</th>
@@ -22,17 +28,21 @@ const DataTable = ({maal}) => {
                       <th>Confirmed Password</th>
                   </tr>
               </thead>
-              <tbody>  
-                <tr>
-                      <td>{maal.name}</td>
-                      <td>{maal.email}</td>
-                      <td>{maal.dob}</td>
-                      <td>{maal.gender}</td>
-                      <td>{maal.file}</td>
-                      <td>{maal.education}</td>
-                      <td>{maal.password}</td>
-                      <td>{maal.password2}</td>
-                  </tr>   
+              <tbody> 
+                      {
+                        contacts.map((contact)=>
+                        <tr>
+                          <td>{contact.name}</td>
+                          <td>{contact.email}</td>
+                          <td>{contact.dob}</td>
+                          <td>{contact.gender}</td>
+                          <td>{contact.file}</td>
+                          <td>{contact.education}</td>
+                          <td>{contact.password}</td>
+                          <td>{contact.password2}</td>
+                        </tr>)
+                      }
+                   
               </tbody>
           </table>
 
@@ -43,3 +53,16 @@ const DataTable = ({maal}) => {
 }
 
 export default DataTable;
+
+
+
+
+
+
+
+
+
+
+
+
+

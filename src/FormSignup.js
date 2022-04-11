@@ -105,11 +105,11 @@ const FormSignup = () => {
                   {errors.password2 && <p>{errors.password2}</p>}
              </div>
 
-             <button  type='submit'>Sign up</button>
+             <button type='submit'>Sign up</button>
              </form>
              </div>
 
-            {console.log(values)}
+            
 
             <DataTable maal={values} />
 

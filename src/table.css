@@ -1,0 +1,13 @@
+.tableData {
+  padding: 1.5rem;
+  margin: 3rem;
+}
+table{
+  border: 1px solid rgb(245, 245, 245);
+}
+table tr{
+  border: 1px solid;
+}
+table th{
+  padding: 2rem;
+}
